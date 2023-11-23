@@ -25,7 +25,7 @@ body {
 
 	background: rgb(14, 0, 255);
 	background: linear-gradient(
-		45deg,
+		46deg,
 		rgba(14, 0, 255, 1) 0%,
 		rgba(108, 255, 0, 1) 6%,
 		rgba(255, 0, 0, 1) 15%,
@@ -52,8 +52,6 @@ body {
 	align-items: center;
 	flex-direction: column;
 	gap: 20px;
-
-
 }
 
 .form__container {
@@ -62,26 +60,19 @@ body {
 }
 
 .form__label {
-	animation-name: love;
-	animation-duration: 120s;
-	animation-iteration-count: infinite;
+    font-weight: bold;
 }
 
 .form__input {
-	font-family: 'Fira Code', sans-serif;
 	font-size: 1.5em;
 	padding: 10px 20px;
 	border: none;
 	border-radius: 8px;
 	width: 70vw;
-
-	transition-duration: .3s;
-	animation-name: love;
-	animation-duration: 120s;
-	animation-iteration-count: infinite;
+    box-shadow: -1px 0px 100px 75px rgba(0, 255, 224, 0.7);
 
 	&:focus {
-		rotate: -45deg;
+		rotate: -30deg;
 	}
 }
 
@@ -92,8 +83,8 @@ body {
 	border-radius: 8px;
 	background-color: rgb(255, 0, 238);
 	box-shadow: 0 0 100px 20px rgb(0, 102, 255);
-	cursor: pointer;
 	transition-duration: .3s;
+    cursor: pointer;
 
 	&:hover {
 		rotate: 360deg;
@@ -111,7 +102,8 @@ body {
 	width: 10px;
 	height: 10px;
 	border: 10vmin solid;
-	/* This won't work: */
+
+	/* Microsoft Logo: */
 	border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1;
 	
 	animation: 10s rotate linear infinite;
@@ -137,7 +129,7 @@ body {
 	left: 10px;
 
 	animation-name: love;
-	animation-duration: 100ms;
+	animation-duration: 1ms;
 	animation-iteration-count: infinite;
 
 	width: 100px;

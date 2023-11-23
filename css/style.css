@@ -62,7 +62,7 @@ body {
   justify-content: center;
   align-items: center;
   background: rgb(14, 0, 255);
-  background: linear-gradient(45deg, rgb(14, 0, 255) 0%, rgb(108, 255, 0) 6%, rgb(255, 0, 0) 15%, rgb(0, 172, 255) 23%, rgb(209, 0, 255) 33%, rgb(255, 0, 129) 42%, rgb(255, 255, 255) 53%, rgb(0, 255, 25) 67%, rgb(211, 255, 0) 80%, rgb(81, 0, 255) 90%, rgb(0, 212, 255) 100%);
+  background: linear-gradient(46deg, rgb(14, 0, 255) 0%, rgb(108, 255, 0) 6%, rgb(255, 0, 0) 15%, rgb(0, 172, 255) 23%, rgb(209, 0, 255) 33%, rgb(255, 0, 129) 42%, rgb(255, 255, 255) 53%, rgb(0, 255, 25) 67%, rgb(211, 255, 0) 80%, rgb(81, 0, 255) 90%, rgb(0, 212, 255) 100%);
   background-size: 400% 400%;
   animation-name: background;
   animation-duration: 20s;
@@ -84,25 +84,19 @@ body {
 }
 
 .form__label {
-  animation-name: love;
-  animation-duration: 120s;
-  animation-iteration-count: infinite;
+  font-weight: bold;
 }
 
 .form__input {
-  font-family: "Fira Code", sans-serif;
   font-size: 1.5em;
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
   width: 70vw;
-  transition-duration: 0.3s;
-  animation-name: love;
-  animation-duration: 120s;
-  animation-iteration-count: infinite;
+  box-shadow: -1px 0px 100px 75px rgba(0, 255, 224, 0.7);
 }
 .form__input:focus {
-  rotate: -45deg;
+  rotate: -30deg;
 }
 
 .form__button {
@@ -112,8 +106,8 @@ body {
   border-radius: 8px;
   background-color: rgb(255, 0, 238);
   box-shadow: 0 0 100px 20px rgb(0, 102, 255);
-  cursor: pointer;
   transition-duration: 0.3s;
+  cursor: pointer;
 }
 .form__button:hover {
   rotate: 360deg;
@@ -127,7 +121,7 @@ body {
   width: 10px;
   height: 10px;
   border: 10vmin solid;
-  /* This won't work: */
+  /* Microsoft Logo: */
   -o-border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1;
      border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1;
   animation: 10s rotate linear infinite;
@@ -148,7 +142,7 @@ body {
   top: 10px;
   left: 10px;
   animation-name: love;
-  animation-duration: 100ms;
+  animation-duration: 1ms;
   animation-iteration-count: infinite;
   width: 100px;
   opacity: 0;
@@ -164,4 +158,4 @@ body {
   to {
     rotate: 360deg;
   }
-}
+}/*# sourceMappingURL=style.css.map */
