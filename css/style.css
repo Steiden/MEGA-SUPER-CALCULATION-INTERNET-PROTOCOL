@@ -163,6 +163,10 @@ body {
   border-collapse: collapse;
 }
 
+.table__col {
+  text-align: center;
+}
+
 .table td,
 .table th {
   border: 1px solid #000;

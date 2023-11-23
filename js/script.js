@@ -43,13 +43,15 @@ form.addEventListener("submit", (e) => {
 	}
 	console.log(subnet1, subnet2);
 
+	document.getElementById("mask").textContent = mask.join(".");
+
 	document.getElementById("ip1").textContent = value1Binary.join(".");
 	document.getElementById("ip2").textContent = value2Binary.join(".");
-	document.getElementById("mask").textContent = maskBinary.join(".");
+	document.getElementById("maskBin").textContent = maskBinary.join(".");
 
 	document.getElementById("ip11").textContent = subnet1.join(".");
 	document.getElementById("ip22").textContent = subnet2.join(".");
-	
+
 
 	// Вывод результата
 });
