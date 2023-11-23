@@ -9,24 +9,45 @@
 </head>
 
 <body>
-	<section class="container">
-		<form class="form">
-			<article class="form__container">
-				<label for="address1" class="form__label">IP 1:</label>
-				<article class="form__gradient">
-					<input type="text" id="address1" class="form__input" maxlength="19">
-					<article class="megagradient"></article>
+	<main class="main">
+		<section class="container">
+			<form class="form">
+				<article class="form__container">
+					<label for="address1" class="form__label">IP 1:</label>
+					<article class="form__gradient">
+						<input type="text" id="address1" class="form__input" maxlength="19">
+						<article class="megagradient"></article>
+					</article>
 				</article>
-			</article>
-			<article class="form__container">
-				<label for="address2" class="form__label">IP 2:</label>
-				<input type="text" id="address2" class="form__input" maxlength="16">
-			</article>
-			
-			<button id="submit" type="submit" class="form__button">КАЛЬКУЛЯЦИЯ</button>
-		</form>
-		<img src="./IMG/love.png" alt="love" class="love">
-	</section>
+				<article class="form__container">
+					<label for="address2" class="form__label">IP 2:</label>
+					<input type="text" id="address2" class="form__input" maxlength="16">
+				</article>
+		
+				<button id="submit" type="submit" class="form__button">КАЛЬКУЛЯЦИЯ</button>
+
+				<table class="table">
+					<thead>
+						<th>IP 1</th>
+						<th>IP 2</th>
+						<th>Маска</th>
+					</thead>
+					<tbody>
+						<tr clsas="table__row">
+							<td class="table__col" id="ip1"></td>
+							<td class="table__col" id="ip2"></td>
+							<td class="table__col mask" id="mask" rowspan="2"></td>
+						</tr>
+						<tr clsas="table__row">
+							<td class="table__col" id="ip11"></td>
+							<td class="table__col" id="ip22"></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+			<img src="./IMG/love.png" alt="love" class="love">
+		</section>
+	</main>
 
 	<script src="./js/script.js" type="module"></script>
 </body>

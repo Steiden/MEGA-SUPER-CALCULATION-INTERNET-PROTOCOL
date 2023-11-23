@@ -122,8 +122,7 @@ body {
   height: 10px;
   border: 10vmin solid;
   /* Microsoft Logo: */
-  -o-border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1;
-     border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1;
+  border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1;
   animation: 10s rotate linear infinite;
 }
 
@@ -158,4 +157,14 @@ body {
   to {
     rotate: 360deg;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  border: 1px solid #000;
+  padding: 10px;
+}
