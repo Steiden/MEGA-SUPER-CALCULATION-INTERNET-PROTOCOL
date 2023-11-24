@@ -35,8 +35,8 @@ form.addEventListener("submit", (e) => {
 		let temp1 = '';
 		let temp2 = '';
 		for(let j = 0; j < value1Binary[i].length; j++) {
-			temp1 += value1Binary[i][j] === maskBinary[i][j] ? "1" : "0";
-			temp2 += value2Binary[i][j] === maskBinary[i][j] ? "1" : "0";
+			temp1 += value1Binary[i][j] * maskBinary[i][j];
+			temp2 += value2Binary[i][j] * maskBinary[i][j];
 		}
 		subnet1[i] = temp1;
 		subnet2[i] = temp2;
