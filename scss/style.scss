@@ -15,7 +15,6 @@ body {
 }
 
 .container {
-	position: fixed;
 	width: 100%;
 	height: 100dvh;
 
@@ -93,60 +92,65 @@ body {
 
 
 
-.megagradient {
-	position: absolute;
-	top: 0;
-	left: 0;
+// .megagradient {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
 
-	--angle: 0deg;
-	width: 10px;
-	height: 10px;
-	border: 10vmin solid;
+// 	--angle: 0deg;
+// 	width: 10px;
+// 	height: 10px;
+// 	border: 10vmin solid;
 
-	/* Microsoft Logo: */
-	border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1;
+// 	/* Microsoft Logo: */
+// 	border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1;
 	
-	animation: 10s rotate linear infinite;
-}
+// 	animation: 10s rotate linear infinite;
+// }
 
-@keyframes rotate {
-	to {
-		--angle: 360deg;
-	}
-}
+// @keyframes rotate {
+// 	to {
+// 		--angle: 360deg;
+// 	}
+// }
 
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
+// @property --angle {
+//   syntax: '<angle>';
+//   initial-value: 0deg;
+//   inherits: false;
+// }
 
 
 
-.love {
-	position: absolute;
-	top: 10px;
-	left: 10px;
+// .love {
+// 	position: absolute;
+// 	top: 10px;
+// 	left: 10px;
 
-	animation-name: love;
-	animation-duration: 1ms;
-	animation-iteration-count: infinite;
+// 	animation-name: love;
+// 	animation-duration: 1ms;
+// 	animation-iteration-count: infinite;
 
-	width: 100px;
-	opacity: 0;
+// 	width: 100px;
+// 	opacity: 0;
 
-	&:hover {
-		opacity: 1;
-	}
-}
+// 	&:hover {
+// 		opacity: 1;
+// 	}
+// }
 
-@keyframes love {
-	from {
-		rotate: 0deg;
-	}
-	to {
-		rotate: 360deg;
-	}
+// @keyframes love {
+// 	from {
+// 		rotate: 0deg;
+// 	}
+// 	to {
+// 		rotate: 360deg;
+// 	}
+// }
+
+.table-container {
+	width: 90vw;
+	overflow-x: scroll;
 }
 
 .table {

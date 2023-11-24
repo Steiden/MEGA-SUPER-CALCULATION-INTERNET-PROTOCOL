@@ -35,17 +35,6 @@ button {
   outline: none;
 }
 
-@keyframes background {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
 body {
   font-size: 1.2em;
 }
@@ -55,7 +44,6 @@ body {
 }
 
 .container {
-  position: fixed;
   width: 100%;
   height: 100dvh;
   display: flex;
@@ -113,51 +101,11 @@ body {
   rotate: 360deg;
 }
 
-.megagradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  --angle: 0deg;
-  width: 10px;
-  height: 10px;
-  border: 10vmin solid;
-  /* Microsoft Logo: */
-  border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1;
-  animation: 10s rotate linear infinite;
+.table-container {
+  width: 90vw;
+  overflow-x: scroll;
 }
 
-@keyframes rotate {
-  to {
-    --angle: 360deg;
-  }
-}
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-.love {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  animation-name: love;
-  animation-duration: 1ms;
-  animation-iteration-count: infinite;
-  width: 100px;
-  opacity: 0;
-}
-.love:hover {
-  opacity: 1;
-}
-
-@keyframes love {
-  from {
-    rotate: 0deg;
-  }
-  to {
-    rotate: 360deg;
-  }
-}
 .table {
   width: 100%;
   border-collapse: collapse;
